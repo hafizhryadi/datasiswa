@@ -25,7 +25,7 @@
        Jurusan: {!! $siswa->jurusan !!}
     </div>
     <div class="col-12 mb-3">
-      @foreach ($siswa->ekskul as $e)
+      @foreach ($siswa->ekskul as &e)
          Ekskul: {{ $e->nama }}
       @endforeach
     </div>
